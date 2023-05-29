@@ -1,0 +1,17 @@
+{
+    "python_hello_world":{
+        "explanation":"To print hello world you can use this syntax",
+        "syntax": "print(\"hello world\")"
+    },
+
+    "python_comment_line":{
+        "explanation":"To make a single comment line you can use '#' symbol...\n '''(Triple quotes) are used for multiline comments...comment line won't execute during program execution",
+        "syntax": "# This is a comment line - single line \n print(\"Hello Mate !\")\n\n'''This is \n a multiline \n comment line''' \n print(\"How Are You ?\")"
+    },
+
+    "python_variables":{
+        "explanation":"Variables is like a empty container used to hold data \n you can choose any name for the variable",
+        "syntax": "x=10 \ny=20 # here 'x' and 'y' are variables and each assigned with integer data"
+    }
+
+}
