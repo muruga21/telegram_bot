@@ -16,9 +16,13 @@ send = bot.send_message
 def hello(message):
     bot.send_message(message.chat.id,"✋")
 def cool(message):
-    bot.send_message(message.chat.id,"😎")
+    bot.send_message(message.chat.id,"💻")
 def laugh(message):
-    send(message.chat.id,"😅")
+    send(message.chat.id,"📱")
+
+
+#creating a list of topics in 
+
 
 #for start command
 @bot.message_handler(commands=["start","hello"])

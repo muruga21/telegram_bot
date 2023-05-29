@@ -1,5 +1,6 @@
 {
     "python_hello_world":{
+        "image":"",
         "explanation":"To print hello world you can use this syntax",
         "syntax": "print(\"hello world\")"
     },
@@ -13,5 +14,4 @@
         "explanation":"Variables is like a empty container used to hold data \n you can choose any name for the variable",
         "syntax": "x=10 \ny=20 # here 'x' and 'y' are variables and each assigned with integer data"
     }
-
 }
