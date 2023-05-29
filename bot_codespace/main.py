@@ -21,6 +21,11 @@ def laugh(message):
     send(message.chat.id,"📱")
 
 
+#creating a function to fetch data from json
+def fetch(command):
+    return data[command]["explanation"] +"🧑‍💻 \n\n" + data[command]["syntax"]+"\n\n"+ data[command]["next"]
+
+
 #creating a list of topics in 
 
 
@@ -50,20 +55,18 @@ def python(message):
 #for python_hello_world command
 @bot.message_handler(commands=["python_hello_world"])
 def python_hello_world(message):
-    result=data["python_hello_world"]["explanation"] +"🧑‍💻 \n\n" + data["python_hello_world"]["syntax"]
-    send(message.chat.id,result)
+    send(message.chat.id,fetch("python_hello_world"))
 
 #for pythoncomment_line command    
 @bot.message_handler(commands=["python_comment_line"])
 def python_comment_line(message):
     laugh(message)
-    result=data["python_comment_line"]["explanation"] +"🧑‍💻 \n\n" + data["python_comment_line"]["syntax"]
-    send(message.chat.id,result)
+    send(message.chat.id,fetch("python_comment_line"))
+
 #for pythoncomment_line command    
 @bot.message_handler(commands=["python_variables"])
-def python_comment_line(message):
-    result=data["python_variables"]["explanation"] +"🧑‍💻 \n\n" + data["python_variables"]["syntax"]
-    send(message.chat.id,result)        
+def python_variables(message):
+    send(message.chat.id,fetch("python_variables"))        
 
 #calling bot polling function
 bot.polling()
