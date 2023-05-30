@@ -44,17 +44,25 @@ def muruga(message):
 #for python command
 @bot.message_handler(commands=["python"])
 def python(message):
-    cool(message)
+    bot.send_photo(message.chat.id,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4zu2rGA8O90sKDRweHk7XogaXttx9-uEfQ&usqp=CAU")
     result = '''PYTHON!! \t yay...🍾\n
+    /python_introduction - to know about python\n
     /python_hello_world - how print statement works...\n
     /python_comment_line - how to comment a line in python\n
     /python_variables - how to create and use variables\n
     '''
     send(message.chat.id,result)
 
+#for python_introduction command
+@bot.message_handler(commands=["python_introduction"])
+def python_hello_world(message):
+    bot.send_photo(message.chat.id,data["python_introduction"]["image"])
+    send(message.chat.id,fetch("python_introduction"))
+
 #for python_hello_world command
 @bot.message_handler(commands=["python_hello_world"])
 def python_hello_world(message):
+    bot.send_photo(message.chat.id,data["python_hello_world"]["image"])
     send(message.chat.id,fetch("python_hello_world"))
 
 #for pythoncomment_line command    
@@ -66,6 +74,7 @@ def python_comment_line(message):
 #for pythoncomment_line command    
 @bot.message_handler(commands=["python_variables"])
 def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_variables"]["image"])
     send(message.chat.id,fetch("python_variables"))        
 
 #calling bot polling function
