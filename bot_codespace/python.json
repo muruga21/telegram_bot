@@ -52,5 +52,11 @@
         "explanation":"Strings in python are surrounded by either single quotation marks, or double quotation marks.'hello' is the same as \"hello\"",
         "syntax": " string1=\"This is a string\"\n string2='This is also a string'",
         "next":""
+    },
+    "python_String_Slicing":{
+        "image":"",
+        "explanation":"You can return a range of characters by using the slice syntax.Specify the start index and the end index, separated by a colon, to return a part of the string.",
+        "syntax": " b = \"Hello, World!\" \nprint(b[2:5]) \nYou can return a range of characters by using the slice syntax.\n",
+        "next":""
     }
 }
