@@ -54,6 +54,7 @@ def python(message):
     /python_Modify_Strings- how to modify a string\n
     /python_Escape_Characters- what are escape characters\n
     /python_Booleans - what is a boolean\n
+    
     /python_Operators - what is an operator\n
     /python_Arithmetic_operators - To perform arithmatic operations\n
     /python_Assignment_operators - To assign a value to a variable\n
