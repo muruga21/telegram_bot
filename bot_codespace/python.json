@@ -47,4 +47,10 @@
         "syntax": "int(x) - to type caste to integer\nstr(x) - to type caste to string\n float(x) - to type case to float",
         "next":""
     },
+    "python_Strings":{
+        "image":"",
+        "explanation":"Strings in python are surrounded by either single quotation marks, or double quotation marks.'hello' is the same as \"hello\"",
+        "syntax": " string1=\"This is a string\"\n string2='This is also a string'",
+        "next":""
+    }
 }
