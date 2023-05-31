@@ -47,6 +47,8 @@ def python(message):
     /python_hello_world - how print statement works...\n
     /python_comment_line - how to comment a line in python\n
     /python_variables - how to create and use variables\n
+    /python_Numeric_types - Numeric types in python\n
+    /python_Type_Casting - 
     '''
     send(message.chat.id,result)
 
@@ -73,7 +75,19 @@ def python_comment_line(message):
 @bot.message_handler(commands=["python_variables"])
 def python_variables(message):
     bot.send_photo(message.chat.id,data["python_variables"]["image"])
-    send(message.chat.id,fetch("python_variables"))        
+    send(message.chat.id,fetch("python_variables"))
+
+#for pythoncomment_line command  
+@bot.message_handler(commands=["python_Numeric_types"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Numeric_types"]["image"])
+    send(message.chat.id,fetch("python_Numeric_types"))
+
+@bot.message_handler(commands=["python_Type_Casting"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Type_Casting"]["image"])
+    send(message.chat.id,fetch("python_Type_Casting"))     
+
 
 #calling bot polling function
 bot.polling()
