@@ -14,7 +14,7 @@ send = bot.send_message
 
 #defining some functions for emojis "just for fun"
 def hello(message):
-    bot.send_message(message.chat.id,"✋")
+    bot.send_message(message.chat.id,"💻")
 def cool(message):
     bot.send_message(message.chat.id,"💻")
 def laugh(message):
