@@ -19,7 +19,7 @@ def cool(message):
     bot.send_message(message.chat.id,"💻")
 def laugh(message):
     send(message.chat.id,"📱")
-
+#kishore
 
 #creating a function to fetch data from json
 def fetch(command):
