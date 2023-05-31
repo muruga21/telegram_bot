@@ -26,9 +26,6 @@ def fetch(command):
     return data[command]["explanation"] +"🧑‍💻 \n\n" + data[command]["syntax"]+"\n\n"+ data[command]["next"]
 
 
-#creating a list of topics in 
-
-
 #for start command
 @bot.message_handler(commands=["start","hello"])
 def start(message):
@@ -55,7 +52,8 @@ def python(message):
 
 #for python_introduction command
 @bot.message_handler(commands=["python_introduction"])
-def python_hello_world(message):
+def python_hello_world(message,commands):
+    print(commands)
     bot.send_photo(message.chat.id,data["python_introduction"]["image"])
     send(message.chat.id,fetch("python_introduction"))
 
