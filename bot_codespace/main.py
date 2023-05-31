@@ -50,9 +50,18 @@ def python(message):
     /python_Numeric_types - Numeric types in python\n
     /python_Type_Casting -  To convert one data type to another data type\n
     /python_Strings - what is a string?\n
-    /python_String_Slicing-
-    /python_Modify_Strings-
-    /python_Escape_Characters-
+    /python_String_Slicing- how to slice a string\n
+    /python_Modify_Strings- how to modify a string\n
+    /python_Escape_Characters- what are escape characters\n
+    /python_Booleans - what is a boolean\n
+    /python_Operators - what is an operator\n
+    /python_Arithmetic_operators - To perform arithmatic operations\n
+    /python_Assignment_operators - To assign a value to a variable\n
+    /python_Comparison_operators - To compare two values\n
+    /python_Logical_operators - To perform Logical operations\n
+    /python_Identity_operators - To perform Identity operations\n
+    /python_Membership_operators - To perform Membership operations\n
+    /python_Bitwise_operators- To compare (binary) numbers \n
     '''
     send(message.chat.id,result)
 
@@ -128,11 +137,65 @@ def python_variables(message):
     bot.send_photo(message.chat.id,data["python_Escape_Characters"]["image"])
     send(message.chat.id,fetch("python_Escape_Characters"))
 
-#for python_String_Methods command
-@bot.message_handler(commands=["python_String_Methods"])
+# #for python_String_Methods command
+# @bot.message_handler(commands=["python_String_Methods"])
+# def python_variables(message):
+#     bot.send_photo(message.chat.id,data["python_String_Methods"]["image"])
+#     send(message.chat.id,fetch("python_String_Methods"))
+
+#for python_Booleans command
+@bot.message_handler(commands=["python_Booleans"])
 def python_variables(message):
-    bot.send_photo(message.chat.id,data["python_String_Methods"]["image"])
-    send(message.chat.id,fetch("python_String_Methods"))
+    bot.send_photo(message.chat.id,data["python_Booleans"]["image"])
+    send(message.chat.id,fetch("python_Booleans"))
+
+#for python_Operators command
+@bot.message_handler(commands=["python_Operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Operators"]["image"])
+    send(message.chat.id,fetch("python_Operators"))
+
+#for python_Arithmetic operators command
+@bot.message_handler(commands=["python_Arithmetic_operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Arithmetic_operators"]["image"])
+    send(message.chat.id,fetch("python_Arithmetic_operators"))
+
+#for python_Assignment_operators command
+@bot.message_handler(commands=["python_Assignment_operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Assignment_operators"]["image"])
+    send(message.chat.id,fetch("python_Assignment_operators"))
+
+#for python_Comparison_operators command
+@bot.message_handler(commands=["python_Comparison_operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Comparison_operators"]["image"])
+    send(message.chat.id,fetch("python_Comparison_operators"))
+
+#for python_Logical_operators command
+@bot.message_handler(commands=["python_Logical_operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Logical_operators"]["image"])
+    send(message.chat.id,fetch("python_Logical_operators"))
+
+#for python_Identity_operators command
+@bot.message_handler(commands=["python_Identity_operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Identity_operators"]["image"])
+    send(message.chat.id,fetch("python_Identity_operators"))
+
+#for python_Membership_operators command
+@bot.message_handler(commands=["python_Membership_operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Membership_operators"]["image"])
+    send(message.chat.id,fetch("python_Membership_operators"))
+
+#for python_Bitwise_operators command
+@bot.message_handler(commands=["python_Bitwise_operators"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Bitwise_operators"]["image"])
+    send(message.chat.id,fetch("python_Bitwise_operators"))
 
 
 #calling bot polling function
