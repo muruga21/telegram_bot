@@ -50,8 +50,9 @@ def python(message):
     /python_Numeric_types - Numeric types in python\n
     /python_Type_Casting -  To convert one data type to another data type\n
     /python_Strings - what is a string?\n
-    /python_String_Slicing
-    /python_Modify_Strings
+    /python_String_Slicing-
+    /python_Modify_Strings-
+    /python_Escape_Characters-
     '''
     send(message.chat.id,result)
 
@@ -107,7 +108,31 @@ def python_variables(message):
 @bot.message_handler(commands=["python_Modify_Strings"])
 def python_variables(message):
     bot.send_photo(message.chat.id,data["python_Modify_Strings"]["image"])
-    send(message.chat.id,fetch("python_Modify_Strings"))     
+    send(message.chat.id,fetch("python_Modify_Strings"))
+
+#for python_String_Concatenation command
+@bot.message_handler(commands=["python_String_Concatenation"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_String_Concatenation"]["image"])
+    send(message.chat.id,fetch("python_String_Concatenation"))         
+
+#for python_Format_Strings command
+@bot.message_handler(commands=["python_Format_Strings"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Format_Strings"]["image"])
+    send(message.chat.id,fetch("python_Format_Strings"))
+
+#for python_Escape_Characters command
+@bot.message_handler(commands=["python_Escape_Characters"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Escape_Characters"]["image"])
+    send(message.chat.id,fetch("python_Escape_Characters"))
+
+#for python_String_Methods command
+@bot.message_handler(commands=["python_String_Methods"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_String_Methods"]["image"])
+    send(message.chat.id,fetch("python_String_Methods"))
 
 
 #calling bot polling function
