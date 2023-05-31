@@ -48,7 +48,10 @@ def python(message):
     /python_comment_line - how to comment a line in python\n
     /python_variables - how to create and use variables\n
     /python_Numeric_types - Numeric types in python\n
-    /python_Type_Casting - 
+    /python_Type_Casting -  To convert one data type to another data type\n
+    /python_Strings - what is a string?\n
+    /python_String_Slicing
+    /python_Modify_Strings
     '''
     send(message.chat.id,result)
 
@@ -77,16 +80,34 @@ def python_variables(message):
     bot.send_photo(message.chat.id,data["python_variables"]["image"])
     send(message.chat.id,fetch("python_variables"))
 
-#for pythoncomment_line command  
+#for python_Numeric_types command 
 @bot.message_handler(commands=["python_Numeric_types"])
 def python_variables(message):
     bot.send_photo(message.chat.id,data["python_Numeric_types"]["image"])
     send(message.chat.id,fetch("python_Numeric_types"))
-
+#for python_Type_Casting command 
 @bot.message_handler(commands=["python_Type_Casting"])
 def python_variables(message):
     bot.send_photo(message.chat.id,data["python_Type_Casting"]["image"])
-    send(message.chat.id,fetch("python_Type_Casting"))     
+    send(message.chat.id,fetch("python_Type_Casting"))
+
+#for python_Strings command 
+@bot.message_handler(commands=["python_Strings"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Strings"]["image"])
+    send(message.chat.id,fetch("python_Strings"))
+
+#for python_String_Slicing command 
+@bot.message_handler(commands=["python_String_Slicing"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_String_Slicing"]["image"])
+    send(message.chat.id,fetch("python_String_Slicing"))
+
+# #for python_Modify_Slicing command
+@bot.message_handler(commands=["python_Modify_Strings"])
+def python_variables(message):
+    bot.send_photo(message.chat.id,data["python_Modify_Strings"]["image"])
+    send(message.chat.id,fetch("python_Modify_Strings"))     
 
 
 #calling bot polling function
