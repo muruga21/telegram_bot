@@ -72,7 +72,7 @@ def python_hello_world(message):
 #for pythoncomment_line command    
 @bot.message_handler(commands=["python_comment_line"])
 def python_comment_line(message):
-    laugh(message)
+    bot.send_photo(message.chat.id,data["python_comment_line"]["image"])
     send(message.chat.id,fetch("python_comment_line"))
 
 #for pythoncomment_line command    

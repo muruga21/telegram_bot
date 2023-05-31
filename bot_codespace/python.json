@@ -39,24 +39,30 @@
         "image":"https://lh3.googleusercontent.com/fife/APg5EOacYGkmQV66DRE9D7031xr2P7whmohk1m2ESpgcYihTNxh7H6FhAWJvbqRFg4m6Kd5Q8kEwYkOL_f9KXR5OCrayDeSTl1k4bbxBEdEw97jUUdecTRKUiy2acrqhl6M75A_on5KveWaWlWECuMMxueZ8qwZjpIA7MIYaNDs7sat2Ai53RQtH9RHNoQHKHo7xeIYOaeM7FXk-nQW8zccI0QPZoDH43aN4dtqrlpLCwMZqiumD3jaLIkBi-WXHWY6StEGrFYmfHv5Ob6mU038X8kxRUSjAUkseWtKxxvD3lmuKkfA7Y1P4t3u3oyFNC4fMZsn7-nGGNv3WWaqH2YgXPYYO_W89WSZXtKHJPsUaLsWA7woMWwIHMLoArDi-sF1W-WSTXbk1CMmZ67rrktIDmvCViEMYDe5O9vJMcoO2FQwbBFTPCqQjILWAJw0q1UuqHdQ3ztyhhtxjmOr8f09PJMLANqTTU17f0mHuFWUb2_bhwKNHeTwZ6iRDK53SwOHJXFy1dQyjMD84wNcAVr8cbTu_zR2SNE8sL6nCoZy6AMLafTXl_vTdqvXhxUpUhB3fVn5BBTNl5zbZ9rHGJg2bIJaAHWBSllR-fQehFRqY2cQZ5UKLneDHu7Or--8TCDx8MSz333Wjs6MOwwrM_da8ftyFQE-srJVAdCX9ECBpWqXh5u5TQBARM1Wr3aS3GLCW8iPY8ux9jDqmSRrdTbAGHAg0cTTQfmiwtOgqjqR9iVlfYeKe56B0fX_Yj9m2TwBH24UKFPHvYMXp5JZvI909OeItQk5G3yqMoxnvL0P0jx9TLQDmtErRjRPndoHgIg5rdr5ziu4yKC59ONjJw2UNeBdNObTLv1eiRvLhgKPjNEwWextL4BMjCdroPx0dakvtzcfrqySNJ8S84tzBfIRarIJNgiwt08Wevkv3LzymUwFe_EnzD1D9d2CGtMUOJ30hISMfCYEXcNsID07Yd6jUsdbD0ZzRXy-v3y9_tnyQfLved_PIpEIQqgjU0LxUTkulCnXJuyMhBByC4Cq1OSQLiEsbtEgouvJzwUlBmbypV9zjt_03lnX9c6LNyYDUDRrtUz6h21LYFKXShR-WcdV6LCFKowG08JpCQCtpWzT-uCUiEDYyqoNovoi8OcFM-D_yeODMQm_HIIZkENtAHsIYr0Bseh7s4J_48CBZOMMK8pwpuCg6xaUD48Aan6KCyLpGjr_aa40FyuPhLaWdLVqsCAdB9DefmZJuhbavp6o0VvVi7i9BX3D0IyXIm0bCcOdFE-GCAwcolVK5UMeu_whUNGE0U0phkgHqWStibQBk1W1MGcH926z_51iLJa2JltrTxWFr37PDboNFkAVM96iQoePcLQEDF0PchFGu7uth1KL70yLPsf5YR-CBTQjKua4d27LxD82mYf9igwg8LFnErY0subN5JNQ7aCNl1AC9Y3aKAcW3O63ModghMulEI6gmzEIzPa9FjpSUF9bTQvV8--kU93f_4Z_sji5TLZNjzPDyjRpi7KsKtfMe_fi1bgL4irQ5Cg=s320-w320-h200-p-k",
         "explanation":"Python has three main numeric data types: integers (int), floating-point numbers (float),and complex numbers (complex).      \nIntegers are whole numbers, floats represent real numbers with decimal points, and complex numbers have both real and imaginary parts.",
         "syntax": " ",
-        "next":""
+        "next":"Next Topic\n/python_Type_Casting"
     },
     "python_Type_Casting":{
         "image":"",
         "explanation":"Type casting in Python refers to the process of converting one data type to another. Python provides built-in functions for performing type casting",
         "syntax": "int(x) - to type caste to integer\nstr(x) - to type caste to string\n float(x) - to type case to float",
-        "next":""
+        "next":"Next Topic\n/python_Strings"
     },
     "python_Strings":{
         "image":"",
         "explanation":"Strings in python are surrounded by either single quotation marks, or double quotation marks.'hello' is the same as \"hello\"",
         "syntax": " string1=\"This is a string\"\n string2='This is also a string'",
-        "next":""
+        "next":"Next Topic\n/python_String_Slicing"
     },
     "python_String_Slicing":{
         "image":"",
         "explanation":"You can return a range of characters by using the slice syntax.Specify the start index and the end index, separated by a colon, to return a part of the string.",
         "syntax": " b = \"Hello, World!\" \nprint(b[2:5]) \nYou can return a range of characters by using the slice syntax.\n",
+        "next":"Next Topic\n/python_Modify_Strings"
+    },
+    "python_Modify_Strings":{
+        "image":"",
+        "explanation":"The upper() method returns the string in upper case, \nThe lower() method returns the string in lower case,\nThe strip() method removes any whitespace from the beginning or the end",
+        "syntax": "a = \"Hello, World!\"\nprint(a.upper()) \n a = \"Hello, World!\" print(a.lower())",
         "next":""
     }
 }
