@@ -50,25 +50,32 @@ def python(message):
     /python_Numeric_types - Numeric types in python\n
     /python_Type_Casting -  To convert one data type to another data type\n
     /python_Strings - what is a string?\n
-    /python_String_Slicing- how to slice a string\n
-    /python_Modify_Strings- how to modify a string\n
-    /python_Escape_Characters- what are escape characters\n
     /python_Booleans - what is a boolean\n
     /python_Operators - what is an operator\n
-    /python_Arithmetic_operators - To perform arithmatic operations\n
+    '''
+    send(message.chat.id,result)
+
+@bot.message_handler(commands=["python_Strings"])
+def python_hello_world(message):
+    result ='''/python_String_Slicing- how to slice a string\n
+    /python_Modify_Strings- how to modify a string\n
+    /python_Escape_Characters- what are escape characters'''
+    send(message.chat.id,result)
+
+@bot.message_handler(commands=["python_Operators"])
+def python_hello_world(message):
+    result ='''/python_Arithmetic_operators - To perform arithmatic operations\n
     /python_Assignment_operators - To assign a value to a variable\n
     /python_Comparison_operators - To compare two values\n
     /python_Logical_operators - To perform Logical operations\n
     /python_Identity_operators - To perform Identity operations\n
     /python_Membership_operators - To perform Membership operations\n
-    /python_Bitwise_operators- To compare (binary) numbers \n
-    '''
+    /python_Bitwise_operators- To compare (binary) numbers'''
     send(message.chat.id,result)
 
 #for python_introduction command
 @bot.message_handler(commands=["python_introduction"])
-def python_hello_world(message,commands):
-    print(commands)
+def python_hello_world(message):
     bot.send_photo(message.chat.id,data["python_introduction"]["image"])
     send(message.chat.id,fetch("python_introduction"))
 
