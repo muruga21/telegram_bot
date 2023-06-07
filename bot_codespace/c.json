@@ -1,1 +1,215 @@
-[{"title": "c_data_types", "image": " ", "explanation": "As explained in the Variables chapter, a variable in C must be a specified \ndata type, \nand you must use a format specifier inside the printf() function to display it:The data type specifies the size and type of information the variable will store.In this tutorial, we will focus on the most basic ones:", "syntax": "\n  // Create variablesint myNum = 5;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // Integer (whole number)float \n  myFloatNum = 5.99;\u00a0\u00a0 // Floating point numberchar myLetter = 'D';\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);\n  float myFloatNum = 3.5;double myDoubleNum = 19.99;\n  printf(\"%f\\n\", myFloatNum); \n  // Outputs 3.500000printf(\"%lf\", myDoubleNum); // Outputs \n  19.990000\n  float myFloatNum = 3.5;printf(\"%f\\n\", myFloatNum); \n  // Default will show 6 digits after the decimal pointprintf(\"%.1f\\n\", \n  myFloatNum); // Only show 1 digitprintf(\"%.2f\\n\", myFloatNum); // Only \n  show 2 digitsprintf(\"%.4f\", myFloatNum);\u00a0\u00a0 // Only show 4 digits", "next": " "}]
+{
+    "c_comments":{
+        "title": "c_comments", 
+        "image": " ", 
+        "explanation": "Comments can be used to explain code, and to make it more readable. It can also be used to \nprevent execution when testing alternative code.Comments can be singled-lined or multi-lined.Single-line comments start with two forward slashes (//).",
+        "syntax": "\n  // This is a commentprintf(\"Hello World!\");\n  printf(\"Hello World!\"); // This is a comment\n  /* The code below will print the words Hello World!to the screen, and it is \n  amazing */printf(\"Hello World!\");", 
+        "next": " "
+    }, 
+    "c_variables":{
+        "title": "c_variables", 
+        "image": " ", 
+        "explanation": "Variables are containers for storing data values, like numbers and \ncharacters.In C, there are different types of variables (defined with different keywords), for example:To create a variable, specify the type and assign it a \nvalue:", 
+        "syntax": "\ntype variableName = value;\n  int myNum = 15;\n  // Declare a variableint myNum;// Assign a value to the variablemyNum = 15;", 
+        "next": " "
+    }, 
+    "c_data_types":{
+        "title": "c_data_types",
+        "image": " ", 
+        "explanation": "As explained in the Variables chapter, a variable in C must be a specified \ndata type, \nand you must use a format specifier inside the printf() function to display it:The data type specifies the size and type of information the variable will store.In this tutorial, we will focus on the most basic ones:", 
+        "syntax": "\n  // Create variablesint myNum = 5;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // Integer (whole number)float \n  myFloatNum = 5.99;\u00a0\u00a0 // Floating point numberchar myLetter = 'D';\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);\n  float myFloatNum = 3.5;double myDoubleNum = 19.99;\n  printf(\"%f\\n\", myFloatNum); \n  // Outputs 3.500000printf(\"%lf\", myDoubleNum); // Outputs \n  19.990000\n  float myFloatNum = 3.5;printf(\"%f\\n\", myFloatNum); \n  // Default will show 6 digits after the decimal pointprintf(\"%.1f\\n\", \n  myFloatNum); // Only show 1 digitprintf(\"%.2f\\n\", myFloatNum); // Only \n  show 2 digitsprintf(\"%.4f\", myFloatNum);\u00a0\u00a0 // Only show 4 digits", 
+        "next": " "
+    },
+    "c_type_conversion":{
+        "title": "c_type_conversion", 
+        "image": " ", 
+        "explanation": "Sometimes, you have to convert the value of one data type to another \ntype. This is known as type conversion.For example, if you try to divide two integers, 5 by 2, you \nwould \nexpect the result to be 2.5. But since we are \nworking with integers (and not floating-point values), the following example will just output 2:To get the right result, you need to know how type conversion \nworks.", 
+        "syntax": "\n    int x = 5;int y = 2;int sum = 5 / 2;printf(\"%d\", \n    sum);\u00a0// Outputs 2\n    // Automatic conversion: int to floatfloat myFloat = 9;printf(\"%f\", \n  myFloat);\u00a0// 9.000000\n  // Automatic conversion: float to intint myInt = 9.99;printf(\"%d\", \n  myInt); // 9", 
+        "next": " "
+    },
+    "c_constants":{
+        "title": "c_constants",
+        "image": " ", 
+        "explanation": "If you don't want others (or yourself) to change existing variable values, you can use the const keyword.This will declare the variable as \"constant\", which means unchangeable and read-only:You should always declare the variable as constant when you have values that are unlikely to change:",
+        "syntax": "\nconst int minutesPerHour = 60;\nconst float PI = 3.14;\n  const int minutesPerHour = 60;\n\nconst int BIRTHYEAR = 1980;",
+        "next": " "
+    }, 
+    "c_operators":{
+        "title": "c_operators", 
+        "image": " ", 
+        "explanation": "Operators are used to perform operations on variables and values.In the example below, we use the\n+ operator to add together two values:Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:", 
+        "syntax": "\n  int myNum = 100 + 50;\n  int sum1 = 100 + 50;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n  // 150 (100 + 50)\n  int sum2 = sum1 + 250;\u00a0\u00a0\u00a0\u00a0\u00a0 // 400 (150 + 250)\n  int sum3 = sum2 + sum2;\u00a0\u00a0\u00a0\u00a0 // 800 (400 + 400)\nint x = 10;", "next": " "
+    }, 
+    "c_booleans":{
+        "title": "c_booleans",
+        "image": " ",
+        "explanation": "Very often, in programming, you will need a data type that can only have one of two values, like:For this, C has a bool data type, which is \nknown as booleans.Booleans represent values that are either true or false.", 
+        "syntax": "\n  #include <stdbool.h>\n  bool isProgrammingFun = true;bool isFishTasty = false;\n  // Create boolean variablesbool isProgrammingFun = true;bool isFishTasty = false;// \n  Return boolean valuesprintf(\"%d\", \n  isProgrammingFun);\u00a0\u00a0\u00a0// Returns 1 (true)printf(\"%d\", isFishTasty);\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n  // Returns 0 (false)",
+        "next": " "
+        }, 
+    "c_conditions":{
+        "title": "c_conditions", 
+        "image": " ", 
+        "explanation": "You have already learned that C supports the usual logical conditions from mathematics:You can use these conditions to perform different actions for different decisions.C has the following conditional statements:", 
+        "syntax": "\n\n  if (condition) {\u00a0 // block of code to be executed if the \n  condition is true}\n\n  if (20 > 18) {\u00a0 printf(\"20 is greater than 18\");}\n  int x = 20;int y = 18;if (x > y) {\u00a0 printf(\"x is greater than \n  y\");}", 
+        "next": " "
+    }, 
+    "c_conditions_short_hand":{
+        "title": "c_conditions_short_hand", 
+        "image": " ", 
+        "explanation": "There is also a short-hand if else, which is known as the ternary operator \nbecause it consists of three operands. It can be used to replace multiple lines \nof code with a single line. It is often used to replace simple if else \nstatements:Instead of writing:You can simply write:", 
+        "syntax": "\nvariable = (condition) ? expressionTrue : \n  expressionFalse;\n\n  int time = 20;if (time < 18) {\u00a0 printf(\"Good day.\");} else {\u00a0 \n  printf(\"Good evening.\");}\n  int time = 20;(time < 18) ? printf(\"Good day.\") : printf(\"Good evening.\");", 
+        "next": " "
+    }, 
+    "c_switch":{
+        "title": "c_switch", 
+        "image": " ", 
+        "explanation": "Instead of writing many if..else statements, you can use the switch statement.The switch statement selects one of many code blocks to be executed:This is how it works:", 
+        "syntax": "\n\n  switch(expression) {\u00a0 case x:\u00a0\u00a0\u00a0 // code \n  block\u00a0\u00a0\u00a0 break;\u00a0 case y:\u00a0\u00a0\u00a0\n  // code block\u00a0\u00a0\u00a0 break;\u00a0 default:\u00a0\u00a0\u00a0\n  // code block\n  }\n \n    int day = 4;switch (day) {\u00a0 case 1:\u00a0\u00a0\u00a0 \n    printf(\"Monday\");\u00a0\u00a0\u00a0 break;\u00a0 case 2:\u00a0\u00a0\u00a0 \n    printf(\"Tuesday\");\u00a0\u00a0\u00a0 break;\u00a0 case 3:\u00a0\u00a0\u00a0 \n    printf(\"Wednesday\");\u00a0\u00a0\u00a0 break;\u00a0 case 4:\u00a0\u00a0\u00a0 \n    printf(\"Thursday\");\u00a0\u00a0\u00a0 break;\u00a0 case 5:\u00a0\u00a0\u00a0 \n    printf(\"Friday\");\u00a0\u00a0\u00a0 break;\u00a0 case 6:\u00a0\u00a0\u00a0 \n    printf(\"Saturday\");\u00a0\u00a0\u00a0 break;\u00a0 case 7:\u00a0\u00a0\u00a0 \n    printf(\"Sunday\");\u00a0\u00a0\u00a0 break;}// Outputs \"Thursday\" (day 4)\n  int day = 4;switch (day) {\u00a0 case 6:\u00a0\u00a0\u00a0 printf(\"Today is \n  Saturday\");\u00a0\u00a0\u00a0 \n  break;\u00a0 case 7:\u00a0\u00a0\u00a0 printf(\"Today is Sunday\");\u00a0\u00a0\u00a0 \n  break;\u00a0 default:\u00a0\u00a0\u00a0 printf(\"Looking forward to the Weekend\");\n  }// Outputs \"Looking forward to the Weekend\"", 
+        "next": " "
+    }, 
+    "c_while_loop":{
+        "title": "c_while_loop", 
+        "image": " ", 
+        "explanation": "Loops can execute a block of code as long as a specified condition is reached.Loops are handy because they save time, reduce errors, and they make code more readable.The while loop loops through a block of code as long as a specified condition is true:", 
+        "syntax": "\n  while (condition) {\n\u00a0 // code block to be executed\n }\n\n  int i = 0;while (i < 5) {\n  \u00a0 printf(\"%d\\n\", i);\n\u00a0\u00a0i++;}\n\n  do {\n\u00a0 // code block to be executed\n}\nwhile (condition);\n", 
+        "next": " "
+    }, 
+    "c_for_loop":{
+        "title": "c_for_loop", 
+        "image": " ", 
+        "explanation": "When you know exactly how many times you want to loop through a block of \ncode, use the for loop instead of a while loop:Statement 1 is executed (one time) before the execution of the code block.Statement 2 defines the condition for executing the code block.", 
+        "syntax": "\n\nfor (statement 1; statement 2; statement 3) {\n    \u00a0 // code block to be executed\n }\n\n  int i;for (i = 0; i < 5; i++) {\u00a0 printf(\"%d\\n\", \n  i);}\n\n  for (i = 0; i <= 10; i = i + 2) {\u00a0 printf(\"%d\\n\", i);}\n", 
+        "next": " "
+    }, 
+    "c_break_continue":{
+        "title": "c_break_continue", 
+        "image": " ", 
+        "explanation": "You have already seen the break statement used in an earlier chapter of this tutorial. It was used to \"jump out\" of a switch statement.The break statement can also be used to jump out of a \nloop.This example jumps out of the for loop when i is equal to 4:", 
+        "syntax": "\n  int i;for (i = 0; i < 10; i++) {\u00a0 if (i == 4) {\u00a0\u00a0\u00a0 \n  break;\u00a0 }\u00a0 printf(\"%d\\n\", i);}\n\n  int i;for (i = 0; i < 10; i++) {\u00a0 if (i == 4) {\u00a0\u00a0\u00a0 \n  continue;\u00a0 }\u00a0 printf(\"%d\\n\", i);} \n\n  int i = 0;while (i < 10) {\u00a0 if (i == 4) {\u00a0\u00a0\u00a0 \n  break;\u00a0 }\u00a0 printf(\"%d\\n\", i);\u00a0 i++;} \n", 
+        "next": " "
+    }, 
+    "c_arrays":{
+        "title": "c_arrays", 
+        "image": " ", 
+        "explanation": "Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each \nvalue.To create an array, define the data type (like int) and specify the name \nof the array followed by square brackets [].\n\nTo insert values to it, use a comma-separated list, inside curly braces:\n\n", 
+        "syntax": "\n  int myNumbers[] = {25, \n  50, 75, 100};\n\n  int myNumbers[] = {25, 50, 75, 100};\n  printf(\"%d\", myNumbers[0]);// Outputs 25\n\n  myNumbers[0] = 33;\n", 
+        "next": " "
+    }, 
+    "c_arrays_multi":{
+        "title": "c_arrays_multi", 
+        "image": " ", 
+        "explanation": "In the previous chapter, you learned about arrays, which is also known as \nsingle dimension arrays. These are great, and something you will use a lot while programming in C. However, if you want to store data as a tabular form, like a table with rows and columns, you need to get familiar with \nmultidimensional arrays.A multidimensional array is basically an array of arrays.Arrays can have any number of dimensions. In this chapter, we will introduce the most common; two-dimensional arrays \n(2D).", 
+        "syntax": "\n  int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };\n\n  int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };printf(\"%d\", \n  matrix[0][2]);\u00a0 // Outputs 2\n  int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };matrix[0][0] = 9;\n  printf(\"%d\", matrix[0][0]);\u00a0 // Now outputs 9 instead of 1", 
+        "next": " "
+    },
+    "c_strings":{
+        "title": "c_strings", 
+        "image": " ", 
+        "explanation": "Strings are used for storing text/characters.For example, \"Hello World\" is a string of characters.Unlike many other programming languages, C does not have a String type \nto easily create string variables. Instead, you must use the char type and create \nan array of characters to make a string in C:", 
+        "syntax": "\n  char greetings[] = \"Hello World!\";\n\n  char greetings[] = \"Hello World!\";\n  printf(\"%s\", greetings);\n\n  char greetings[] = \"Hello World!\";\n  printf(\"%c\", greetings[0]);\n", 
+        "next": " "
+    },
+    "c_strings_esc":{
+        "title": "c_strings_esc", 
+        "image": " ", 
+        "explanation": "Because strings must be written within quotes, C will misunderstand this string, \nand generate an error:The solution to avoid this problem, is to use the backslash escape character.The backslash (\\) escape character turns special characters into string characters:", 
+        "syntax": "\n  char txt[] = \"We are the so-called \\\"Vikings\\\" from the north.\";\n\n  char txt[] = \"It\\'s alright.\";\n\n  char txt[] = \"The character \\\\ is called backslash.\";\n", 
+        "next": " "
+    }, 
+    "c_strings_functions":{
+        "title": "c_strings_functions", 
+        "image": " ", 
+        "explanation": "C also has many useful string functions, which can be used to perform \ncertain operations on strings.To use them, you must include the <string.h> header file in your program:For example, to get the length of a string, you can use the strlen() function:", 
+        "syntax": "\n  #include <string.h>\n\n  char alphabet[] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));\n\n  char alphabet[] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));\u00a0\u00a0 // 26printf(\"%d\", \n  sizeof(alphabet));\u00a0\u00a0 // 27\n", 
+        "next": " "
+    }, 
+    "c_user_input":{
+        "title": "c_user_input", 
+        "image": " ", 
+        "explanation": "You have already learned that printf() is used to output values in C.To get user input, you can use the scanf() function:Output a number entered by the user:", 
+        "syntax": "\n  // Create an integer variable that will store the number we get from the userint myNum;// Ask the user to type a numberprintf(\"Type a number: \n  \\n\");// Get and save the number the user typesscanf(\"%d\", &myNum);\n// Output the number the user typedprintf(\"Your number is: %d\", myNum);\n\n  // Create an int and a char variableint myNum;char myChar;\n  // Ask the user to type a number AND a characterprintf(\"Type a number AND \n  a character and press enter: \\n\"); // Get and save the number AND \n  character the user typesscanf(\"%d %c\", &myNum, &myChar);// Print \n  the numberprintf(\"Your number is: %d\\n\", myNum);// Print the \n  characterprintf(\"Your character is: %c\\n\", myChar);\n\n  // Create a stringchar firstName[30];// Ask the user to input some \n  textprintf(\"Enter your first name: \\n\");// Get and save the text\n  scanf(\"%s\", firstName);// Output the textprintf(\"Hello %s\", \n  firstName);\n", 
+        "next": " "
+    }, 
+    "c_memory_address":{
+        "title": "c_memory_address", 
+        "image": " ", 
+        "explanation": "When a variable is created in C, a memory address is assigned to the variable.The memory address is the \nlocation of where the variable is stored on the computer.\nWhen we assign a value to the variable, it is stored in this memory \naddress. ", 
+        "syntax": "\n  int myAge = 43;printf(\"%p\", &myAge); // Outputs 0x7ffe5367e044\n", 
+        "next": " "
+    }, 
+    "c_pointers":{
+        "title": "c_pointers", 
+        "image": " ", 
+        "explanation": "You learned from the previous chapter, that we can get the memory \naddress of a variable with the reference \noperator &:A pointer is a variable that stores the\nmemory address of another variable as its value. A pointer variable points to a data type (like int) of the same \ntype, and is created with the * operator. ", 
+        "syntax": "\n    int myAge = 43; // an int variableprintf(\"%d\", myAge);\u00a0 // \n    Outputs the value of myAge (43)printf(\"%p\", &myAge); // Outputs the \n    memory address of myAge (0x7ffe5367e044)\n\n    int myAge = 43;\u00a0\u00a0\u00a0\u00a0 // An int variableint* ptr = \n    &myAge;\u00a0\u00a0// A pointer variable, with the name ptr, that \n    stores the address of myAge// Output the value of myAge (43)\n    printf(\"%d\\n\", myAge);// Output \n    the memory address of myAge (0x7ffe5367e044)printf(\"%p\\n\", &myAge);// \n    Output the memory address of myAge with the pointer (0x7ffe5367e044)\n    printf(\"%p\\n\", ptr);\n\n    int myAge = 43;\u00a0\u00a0\u00a0\u00a0 // Variable declarationint* ptr = &myAge;\u00a0 // Pointer \n    declaration// Reference: Output the memory address of myAge with the \n    pointer (0x7ffe5367e044)printf(\"%p\\n\", ptr);// Dereference: \n    Output the value of myAge with the pointer (43)printf(\"%d\\n\", *ptr);\n", 
+        "next": " "
+    }, 
+    "c_pointers_arrays":{
+        "title": "c_pointers_arrays", 
+        "image": " ", 
+        "explanation": "You can also use pointers to access arrays.Consider the following array of integers:You learned from the arrays chapter that you can loop through the array elements with a for loop:", 
+        "syntax": "\n    int myNumbers[4] = {25, 50, 75, 100};\n\n    int myNumbers[4] = {25, 50, 75, 100};int i;for (i = 0; i < 4; \n    i++) {\u00a0 printf(\"%d\\n\", myNumbers[i]);}\n\n    int myNumbers[4] = {25, 50, 75, 100};int i;for (i = 0; i < 4; \n    i++) {\u00a0 printf(\"%p\\n\", &myNumbers[i]);}\n", 
+        "next": " "
+    },
+    "c_functions":{
+        "title": "c_functions", 
+        "image": " ", 
+        "explanation": "A function is a block of code which only runs when it is called.You can pass data, known as parameters, into a function.Functions are used to perform certain actions, and they are \nimportant for reusing code: Define the code once, and use it many times.", 
+        "syntax": "\n  int main() {\u00a0 printf(\"Hello World!\");\u00a0 \n  return 0;}\n    void myFunction() {\u00a0 \n  // code to be executed}\n\n  // Create a functionvoid myFunction() {\u00a0 printf(\"I just got \n  executed!\");}int main() {\u00a0 \n  myFunction(); // call the function\u00a0 return 0;}// Outputs \n  \"I just got executed!\"\n", 
+        "next": " "
+    },
+    "c_functions_parameters":{
+        "title": "c_functions_parameters", 
+        "image": " ", 
+        "explanation": "Information can be passed to functions as a parameter. Parameters act as \nvariables inside the function.Parameters are specified after the function name, inside the parentheses.\nYou can add as many parameters as you want, just separate them with a comma:\nThe following function that takes a string of characters with name as \nparameter. When the function is called, we pass along a name, which is used \ninside the function to print \"Hello\" and the name of each person.", 
+        "syntax": "\nreturnType functionName(parameter1, parameter2, parameter3) {\u00a0 \n  // code to be executed}\n\n  void myFunction(char name[]) {\u00a0 printf(\"Hello %s\\n\", name);}int main() {\u00a0 \n  myFunction(\"Liam\");\u00a0 myFunction(\"Jenny\");\u00a0 \n  myFunction(\"Anja\");\u00a0 return 0;}// Hello Liam\n  // Hello Jenny// Hello Anja\n\n  void myFunction(char name[], int age) {\u00a0 printf(\"Hello %s. \n  You are %d years old.\\n\", name, age);}int main() {\u00a0 \n  myFunction(\"Liam\", 3);\u00a0 myFunction(\"Jenny\", 14);\u00a0 \n  myFunction(\"Anja\", 30);\u00a0 return 0;}// Hello Liam. \n  You are 3 years old.// \n  Hello Jenny. You are 14 years old.\n  // Hello Anja. You are 30 years old.\n", 
+        "next": " "
+    },
+    "c_functions_decl":{
+        "title": "c_functions_decl", 
+        "image": " ", "explanation": "You just learned from the previous chapters that you can create and call a function in the following way:A function consist of two parts:For code optimization, it is recommended to separate the declaration and the definition of the function.", 
+        "syntax": "\n  // Create a functionvoid myFunction() {\u00a0 printf(\"I just got \n  executed!\");}int main() {\u00a0 \n  myFunction(); // call the function\u00a0 return 0;}\n    void myFunction() { // declaration\u00a0 // \n    the body of the function (definition)}\n\n  // Function declarationvoid myFunction();// The main methodint main() {\u00a0 \n  myFunction();\u00a0 // call the function\u00a0 return 0;}// Function definitionvoid myFunction() {\u00a0 \n  printf(\"I just got executed!\");}\n", 
+        "next": " "
+    },
+    "c_functions_recursion":{
+        "title": "c_functions_recursion", 
+        "image": " ", 
+        "explanation": "Recursion is the technique of making a function call itself. This technique provides a way\nto break complicated problems down into simple problems which are easier to solve.Recursion may be a bit difficult to understand. The\nbest way to figure out how it works is to experiment with it.Adding two numbers together is easy to do, but adding a range of numbers is more\ncomplicated. In the following example, recursion is used to add a range of numbers\ntogether by breaking it down into the simple task of adding two numbers:", 
+        "syntax": "\n  int sum(int k);int main() {\u00a0 int result = sum(10);\u00a0 \n  printf(\"%d\", result);\u00a0 return 0;}int sum(int k) {\u00a0 \n  if (k > 0) {\u00a0\u00a0\u00a0 return k + sum(k - 1);\u00a0 } else {\u00a0\u00a0\u00a0 \n  return 0;\u00a0 }}", 
+        "next": " "
+    },
+    "c_math":{
+        "title": "c_math", 
+        "image": " ", 
+        "explanation": "There is also a list of math functions available, that allows you to perform mathematical tasks on numbers.To use them, you must include the math.h\nheader file in your program:To find the square root of a number, use the sqrt() \nfunction:", 
+        "syntax": "\n  #include <math.h>\n\n  printf(\"%f\", sqrt(16));\n\n  printf(\"%f\", ceil(1.4));printf(\"%f\", \n  floor(1.4));\n", 
+        "next": " "
+    },
+    "c_structs":{
+        "title": "c_structs", 
+        "image": " ", 
+        "explanation": "Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is \nknown as a member of the structure.Unlike an array, a structure can contain many \ndifferent data types (int, float, char, etc.).You can create a structure by using the struct \nkeyword and declare each of its members inside curly braces:", 
+        "syntax": "\n  struct MyStructure {\u00a0\u00a0\u00a0// Structure declaration\u00a0 int myNum;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // Member (int \n  variable)\u00a0 char myLetter;\u00a0\u00a0 \u00a0\u00a0\u00a0 // Member (char variable)}; \n  // End the structure with a semicolon\n  struct myStructure {\u00a0 int myNum;\u00a0 char myLetter;};int main() \n  {\u00a0 struct myStructure s1;\u00a0 return 0;}\n    // Create a structure called myStructurestruct myStructure {\u00a0 \n    int myNum;\u00a0 char myLetter;};int main() {\u00a0 // Create a structure variable \n    of myStructure called s1\u00a0 struct myStructure s1;\n\u00a0 // Assign values to members of s1\u00a0 s1.myNum = 13;\u00a0 \n    s1.myLetter = 'B';\u00a0 // Print values\u00a0 printf(\"My \n    number: %d\\n\", s1.myNum);\u00a0 printf(\"My letter: %c\\n\", s1.myLetter);\n\u00a0 return 0;}", 
+        "next": " "},
+    "c_files":{
+        "title": "c_files", 
+        "image": " ", 
+        "explanation": "In C, you can create, open, read, and write to files by declaring a pointer of type \nFILE, and use the fopen() function:FILE is basically a data type, and we need \nto create a pointer variable to work with it (fptr). For now, this \nline is not important. It's just something you need when working with files.To actually open a file, use the fopen() function, which takes two parameters:", 
+        "syntax": "\n    FILE *fptrfptr = fopen(filename, mode);\n    FILE *fptr;// Create a filefptr = fopen(\"filename.txt\", \"w\");\n// Close the filefclose(fptr);\n    fptr = fopen(\"C:\\directoryname\\filename.txt\", \"w\");", 
+        "next": " "
+    },
+    "c_files_write":{
+        "title": "c_files_write", 
+        "image": " ", 
+        "explanation": "Let's use the w mode from the previous \nchapter again, and write something to the file we just created.The w mode means that the file is opened for\nwriting. To insert content to it, you can use the fprint() \nfunction and add the pointer variable (fptr in our example) and some text:As a result, when we open the file on our computer, it looks like this:", "syntax": "\n    FILE *fptr;// Open a file in writing modefptr = fopen(\"filename.txt\", \"w\");\n// Write some text to the filefprintf(fptr, \"Some text\");\n// Close the filefclose(fptr);\n    fprintf(fptr, \"Hello \n    World!\");\n    FILE *fptr;// Open a file in append modefptr = fopen(\"filename.txt\", \"a\");\n// Append some text to the filefprintf(fptr, \"\\nHi everybody!\");\n// Close the filefclose(fptr);", 
+        "next": " "
+    },
+    "c_files_read":{
+        "title": "c_files_read", 
+        "image": " ", 
+        "explanation": "In the previous chapter, we wrote to a file using w \nand a modes inside the fopen() function.To read from a file, you can use the\nr mode:This will make the filename.txt opened for reading.", 
+        "syntax": "\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n// Store the content of the filechar myString[100];\n    fgets(myString, 100, \n    fptr);", 
+        "next": " "
+    }
+}
