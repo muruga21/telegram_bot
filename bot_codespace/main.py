@@ -205,7 +205,17 @@ def python_variables(message):
     send(message.chat.id,fetch("python_Bitwise_operators"))
 
 
+
+
+
+@bot.message_handler(commands=["c_data_types"])
+def c_data_types(message):
+    send(message.chat.id,data["c_data_types"]["syntax"])
+
+
+
+
+
+
 #calling bot polling function
 bot.polling()
-
-#muruga

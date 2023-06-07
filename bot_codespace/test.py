@@ -6,13 +6,13 @@ import re
 datas = []
 
 
-links = ["https://www.w3schools.com/python/python_strings.asp","https://www.w3schools.com/python/python_strings_slicing.asp"]
+links = ["https://www.w3schools.com/c/c_data_types.php"]
 file_path = "D:/temp/data.json"
 
 
 def findtitles(links):
     titles = []
-    pattern = "python_[a-z_]*"
+    pattern = "c_[a-z_]*"
     for link in links:
         title = re.findall(pattern,link)
         titles.append(title)
@@ -49,7 +49,7 @@ def findsyntax(links):
         response = requests.get(url)
         html_content = response.content
         soup = BeautifulSoup(html_content,features='html.parser')
-        result = soup.find_all(class_='w3-example')
+        result = soup.find_all(class_='w3-code notranslate javaHigh')
         lines=0
         syntax = ''
         for res in result:
@@ -83,7 +83,7 @@ createcontent(numberofdatas,explanations)
 
 print(datas)
 
-file_path = "D:/temp/data.json"
+file_path = "D:/telebot/telegram_bot/bot_codespace/data.json"
 
 with open(file_path, 'w') as json_file:
     json_data = json.dumps(datas)
