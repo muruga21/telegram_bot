@@ -9,11 +9,17 @@ data = []
 links = ["https://www.w3schools.com/python/python_strings.asp","https://www.w3schools.com/python/python_strings_slicing.asp"]
 file_path = "D:/temp/data.json"
 
-titles = []
-pattern = "python_[a-z_]*"
-for link in links:
-    title = re.findall(pattern,link)
-    titles.append(title)
+
+def findtitles(links):
+    titles = []
+    pattern = "python_[a-z_]*"
+    for link in links:
+        title = re.findall(pattern,link)
+        titles.append(title)
+    return titles
+titles = findtitles(links)
+
+print (titles)
 
 
 for url in links:
@@ -30,10 +36,10 @@ for url in links:
         explanation += res.text
         if(lines==3):
             break
-    mydic = {title:explanation}
-    data.append(mydic)
-
+    
 print(data)
+
+
 # file_path = "D:/temp/data.json"
 
 # with open(file_path, 'w') as json_file:
