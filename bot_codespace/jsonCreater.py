@@ -71,6 +71,7 @@ numberofdatas = len(explanations)
 def createcontent(numberofdatas,explanations):
     for i in range(0,numberofdatas):
         data = {
+            "title":titles[i][0],
             "image":" ",
             "explanation":explanations[i][0],
             "syntax": syntaxs[i][0],
