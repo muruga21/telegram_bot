@@ -38,7 +38,6 @@ links = [
     "https://www.w3schools.com/c/c_files.php",
     "https://www.w3schools.com/c/c_files_write.php",
     "https://www.w3schools.com/c/c_files_read.php",
-
 ]
 
 
@@ -126,4 +125,3 @@ with open(file_path, 'w') as json_file:
 json_file.close()
 
 print("done")
-

@@ -31,7 +31,7 @@ def fetch(command):
 @bot.message_handler(commands=["start","hello"])
 def start(message):
     hello(message)
-    result = " Hey there... ✋\n Need to learn new programming language...💻\n\n dont worry I'm here to help you...\n I am a virtual bot Created to help others...🤖\n please Enter the following commands...\n\n /python - to start python  \n /c - to start c \n /cpp - to start c++ \n /java - to start java \n /HTML - to start HTMl"
+    result = "Hey there... ✋\nNeed to learn new programming language...💻\n\ndont worry I'm here to help you...\nI am a virtual bot Created to help others...🤖\nplease Enter the following commands...\n\n/python - to start python  \n/c - to start c \n/cpp - to start c++ \n/java - to start java \n/HTML - to start HTMl\n\n/about"
     send(message.chat.id,result)
 
 @bot.message_handler(commands=["python"])
@@ -51,12 +51,23 @@ def python(message):
     send(message.chat.id,result)
 
 
+@bot.message_handler(commands=["c"])
+def c(message):
+    result = '''Welcome to c language\n
+    C is a general-purpose programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is one of the most widely used programming languages and has had a significant influence on the development of many other languages. C is known for its efficiency, flexibility, and low-level programming capabilities, making it suitable for system-level programming and developing applications with high performance requirements.
+    '''    
+    send(message.chat.id,result)
+
+    
 # Handle incoming messages
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
     messageInput = message.text
     messageInput = messageInput[1::]
-    bot.send_message(message.chat.id, fetch(messageInput))
+    try:
+        bot.send_message(message.chat.id, fetch(messageInput))
+    except:
+        bot.send_message(message.chat.id, "invalid command")
     
 
 

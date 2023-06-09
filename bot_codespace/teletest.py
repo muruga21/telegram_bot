@@ -62,6 +62,8 @@ def python(message):
     '''
     send(message.chat.id,result)
 
+
+
 @bot.message_handler(commands=["python_Strings"])
 def python_hello_world(message):
     result ='''/python_String_Slicing- how to slice a string\n
