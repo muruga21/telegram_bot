@@ -59,7 +59,7 @@ def python(message):
 @bot.message_handler(commands=["c"])
 def c(message):
     result = '''Welcome to c language\n
-    C is a general-purpose programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is one of the most widely used programming languages and has had a significant influence on the development of many other languages. C is known for its efficiency, flexibility, and low-level programming capabilities, making it suitable for system-level programming and developing applications with high performance requirements.\n\n\n
+    C is a general-purpose programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. C is known for its efficiency, flexibility, and low-level programming capabilities, making it suitable for system-level programming and developing applications with high performance requirements.\n\n\n
     
 we have devided c language into three parts :\n
     /c_part1\n
@@ -81,6 +81,18 @@ def start(message):
     /c_booleans - what is a booleans\n
     '''
     send(message.chat.id,result)
+@bot.message_handler(commands=["c_part2"])
+def start(message):
+    result = '''
+    Part 1 contains\n\n
+    /c_comments - to create comment lines\n
+    /c_data_types - to know about datatypes\n
+    /c_variables - How to create a variable\n
+    /c_type_conversion - type conversion in c\n
+    /c_operators - operators in c\n
+    /c_booleans - what is a booleans\n
+    '''
+    send(message.chat.id,result)
 
 # Handle incoming messages
 @bot.message_handler(func=lambda message: True)
@@ -90,11 +102,9 @@ def handle_message(message):
     try:
         try:
             if(messageInput[0]=='p'):
-                bot.send_photo(message.chat.id, python_data[messageInput]['image'])
-                bot.send_message(message.chat.id, fetch(messageInput))
+                bot.send_photo(message.chat.id, python_data[messageInput]['image'],caption=fetch(messageInput))
             if(messageInput[0]=='c'):
-                bot.send_photo(message.chat.id, c_data[messageInput]['image'])
-                bot.send_message(message.chat.id, fetch(messageInput))
+                bot.send_photo(message.chat.id, python_data[messageInput]['image'],caption=fetch(messageInput))
         except:
             bot.send_message(message.chat.id, fetch(messageInput))
     except:

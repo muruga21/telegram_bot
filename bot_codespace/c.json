@@ -46,7 +46,7 @@
         "image": " ",
         "explanation": "Very often, in programming, you will need a data type that can only have one of two values, like:For this, C has a bool data type, which is \nknown as booleans.Booleans represent values that are either true or false.", 
         "syntax": "\n  #include <stdbool.h>\n  bool isProgrammingFun = true;bool isFishTasty = false;\n  // Create boolean variablesbool isProgrammingFun = true;bool isFishTasty = false;// \n  Return boolean valuesprintf(\"%d\", \n  isProgrammingFun);\u00a0\u00a0\u00a0// Returns 1 (true)printf(\"%d\", isFishTasty);\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n  // Returns 0 (false)",
-        "next": "/part2"
+        "next": "/c_part2"
         }, 
     "c_conditions":{
         "title": "c_conditions", 
