@@ -84,7 +84,7 @@ def start(message):
 @bot.message_handler(commands=["c_part2"])
 def start(message):
     result = '''
-    Part 1 contains\n\n
+    Part 2 contains\n\n
     /c_comments - to create comment lines\n
     /c_data_types - to know about datatypes\n
     /c_variables - How to create a variable\n

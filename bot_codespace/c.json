@@ -27,13 +27,6 @@
         "syntax": "\n    int x = 5;int y = 2;int sum = 5 / 2;printf(\"%d\", \n    sum);\u00a0// Outputs 2\n    // Automatic conversion: int to floatfloat myFloat = 9;printf(\"%f\", \n  myFloat);\u00a0// 9.000000\n  // Automatic conversion: float to intint myInt = 9.99;printf(\"%d\", \n  myInt); // 9", 
         "next": "/c_operators"
     },
-    "c_constants":{
-        "title": "c_constants",
-        "image": " ", 
-        "explanation": "If you don't want others (or yourself) to change existing variable values, you can use the const keyword.This will declare the variable as \"constant\", which means unchangeable and read-only:You should always declare the variable as constant when you have values that are unlikely to change:",
-        "syntax": "\nconst int minutesPerHour = 60;\nconst float PI = 3.14;\n  const int minutesPerHour = 60;\n\nconst int BIRTHYEAR = 1980;",
-        "next": " "
-    }, 
     "c_operators":{
         "title": "c_operators", 
         "image": " ", 
