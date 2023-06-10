@@ -4,28 +4,28 @@
         "image": " ", 
         "explanation": "Comments can be used to explain code, and to make it more readable. It can also be used to \nprevent execution when testing alternative code.Comments can be singled-lined or multi-lined.Single-line comments start with two forward slashes (//).",
         "syntax": "\n  // This is a commentprintf(\"Hello World!\");\n  printf(\"Hello World!\"); // This is a comment\n  /* The code below will print the words Hello World!to the screen, and it is \n  amazing */printf(\"Hello World!\");", 
-        "next": " "
+        "next": "/c_variables"
     }, 
     "c_variables":{
         "title": "c_variables", 
         "image": " ", 
         "explanation": "Variables are containers for storing data values, like numbers and \ncharacters.In C, there are different types of variables (defined with different keywords), for example:To create a variable, specify the type and assign it a \nvalue:", 
         "syntax": "\ntype variableName = value;\n  int myNum = 15;\n  // Declare a variableint myNum;// Assign a value to the variablemyNum = 15;", 
-        "next": " "
+        "next": "/c_type_conversion"
     }, 
     "c_data_types":{
         "title": "c_data_types",
         "image": " ", 
         "explanation": "As explained in the Variables chapter, a variable in C must be a specified \ndata type, \nand you must use a format specifier inside the printf() function to display it:The data type specifies the size and type of information the variable will store.In this tutorial, we will focus on the most basic ones:", 
         "syntax": "\n  // Create variablesint myNum = 5;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // Integer (whole number)float \n  myFloatNum = 5.99;\u00a0\u00a0 // Floating point numberchar myLetter = 'D';\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);\n  float myFloatNum = 3.5;double myDoubleNum = 19.99;\n  printf(\"%f\\n\", myFloatNum); \n  // Outputs 3.500000printf(\"%lf\", myDoubleNum); // Outputs \n  19.990000\n  float myFloatNum = 3.5;printf(\"%f\\n\", myFloatNum); \n  // Default will show 6 digits after the decimal pointprintf(\"%.1f\\n\", \n  myFloatNum); // Only show 1 digitprintf(\"%.2f\\n\", myFloatNum); // Only \n  show 2 digitsprintf(\"%.4f\", myFloatNum);\u00a0\u00a0 // Only show 4 digits", 
-        "next": " "
+        "next": "/c_variables"
     },
     "c_type_conversion":{
         "title": "c_type_conversion", 
         "image": " ", 
         "explanation": "Sometimes, you have to convert the value of one data type to another \ntype. This is known as type conversion.For example, if you try to divide two integers, 5 by 2, you \nwould \nexpect the result to be 2.5. But since we are \nworking with integers (and not floating-point values), the following example will just output 2:To get the right result, you need to know how type conversion \nworks.", 
         "syntax": "\n    int x = 5;int y = 2;int sum = 5 / 2;printf(\"%d\", \n    sum);\u00a0// Outputs 2\n    // Automatic conversion: int to floatfloat myFloat = 9;printf(\"%f\", \n  myFloat);\u00a0// 9.000000\n  // Automatic conversion: float to intint myInt = 9.99;printf(\"%d\", \n  myInt); // 9", 
-        "next": " "
+        "next": "/c_operators"
     },
     "c_constants":{
         "title": "c_constants",
@@ -38,14 +38,15 @@
         "title": "c_operators", 
         "image": " ", 
         "explanation": "Operators are used to perform operations on variables and values.In the example below, we use the\n+ operator to add together two values:Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:", 
-        "syntax": "\n  int myNum = 100 + 50;\n  int sum1 = 100 + 50;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n  // 150 (100 + 50)\n  int sum2 = sum1 + 250;\u00a0\u00a0\u00a0\u00a0\u00a0 // 400 (150 + 250)\n  int sum3 = sum2 + sum2;\u00a0\u00a0\u00a0\u00a0 // 800 (400 + 400)\nint x = 10;", "next": " "
+        "syntax": "\n  int myNum = 100 + 50;\n  int sum1 = 100 + 50;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n  // 150 (100 + 50)\n  int sum2 = sum1 + 250;\u00a0\u00a0\u00a0\u00a0\u00a0 // 400 (150 + 250)\n  int sum3 = sum2 + sum2;\u00a0\u00a0\u00a0\u00a0 // 800 (400 + 400)\nint x = 10;", 
+        "next": "/c_booleans"
     }, 
     "c_booleans":{
         "title": "c_booleans",
         "image": " ",
         "explanation": "Very often, in programming, you will need a data type that can only have one of two values, like:For this, C has a bool data type, which is \nknown as booleans.Booleans represent values that are either true or false.", 
         "syntax": "\n  #include <stdbool.h>\n  bool isProgrammingFun = true;bool isFishTasty = false;\n  // Create boolean variablesbool isProgrammingFun = true;bool isFishTasty = false;// \n  Return boolean valuesprintf(\"%d\", \n  isProgrammingFun);\u00a0\u00a0\u00a0// Returns 1 (true)printf(\"%d\", isFishTasty);\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n  // Returns 0 (false)",
-        "next": " "
+        "next": "/part2"
         }, 
     "c_conditions":{
         "title": "c_conditions", 

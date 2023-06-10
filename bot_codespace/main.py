@@ -3,8 +3,11 @@ import telebot
 from constants import API_KEY
 import json
 
-with open('python.json') as file:
-    python_data = json.load(file)
+with open('python.json') as py_file:
+    python_data = json.load(py_file)
+
+with open('c.json') as c_file:
+    c_data = json.load(c_file)
 
 #initializing bot with api key
 bot = telebot.TeleBot(API_KEY,parse_mode=None)
@@ -21,10 +24,12 @@ def laugh(message):
     send(message.chat.id,"📱")
 #kishore
 
-#creating a function to fetch data from json
+#creating a function to fetch python_data from json
 def fetch(command):
-    return python_data[command]["explanation"] +"🧑‍💻 \n\n" + python_data[command]["syntax"]+"\n\n"+ python_data[command]["next"]
-
+    if command[0]=='p':
+        return python_data[command]["explanation"] +"🧑‍💻 \n\n" + python_data[command]["syntax"]+"\n\n"+ python_data[command]["next"]
+    elif command[0]=='c':
+        return c_data[command]["explanation"] +"🧑‍💻 \n\n" + c_data[command]["syntax"]+"\n\n"+ "Next topic \n" + c_data[command]["next"]
 
 
 #for start command
@@ -54,18 +59,44 @@ def python(message):
 @bot.message_handler(commands=["c"])
 def c(message):
     result = '''Welcome to c language\n
-    C is a general-purpose programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is one of the most widely used programming languages and has had a significant influence on the development of many other languages. C is known for its efficiency, flexibility, and low-level programming capabilities, making it suitable for system-level programming and developing applications with high performance requirements.
-    '''    
+    C is a general-purpose programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is one of the most widely used programming languages and has had a significant influence on the development of many other languages. C is known for its efficiency, flexibility, and low-level programming capabilities, making it suitable for system-level programming and developing applications with high performance requirements.\n\n\n
+    
+we have devided c language into three parts :\n
+    /c_part1\n
+    /c_part2\n
+    /c_part3\n
+    '''
     send(message.chat.id,result)
 
-    
+
+@bot.message_handler(commands=["c_part1"])
+def start(message):
+    result = '''
+    Part 1 contains\n\n
+    /c_comments - to create comment lines\n
+    /c_data_types - to know about datatypes\n
+    /c_variables - How to create a variable\n
+    /c_type_conversion - type conversion in c\n
+    /c_operators - operators in c\n
+    /c_booleans - what is a booleans\n
+    '''
+    send(message.chat.id,result)
+
 # Handle incoming messages
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
     messageInput = message.text
     messageInput = messageInput[1::]
     try:
-        bot.send_message(message.chat.id, fetch(messageInput))
+        try:
+            if(messageInput[0]=='p'):
+                bot.send_photo(message.chat.id, python_data[messageInput]['image'])
+                bot.send_message(message.chat.id, fetch(messageInput))
+            if(messageInput[0]=='c'):
+                bot.send_photo(message.chat.id, c_data[messageInput]['image'])
+                bot.send_message(message.chat.id, fetch(messageInput))
+        except:
+            bot.send_message(message.chat.id, fetch(messageInput))
     except:
         bot.send_message(message.chat.id, "invalid command")
     
