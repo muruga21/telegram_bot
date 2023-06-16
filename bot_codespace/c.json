@@ -1,7 +1,7 @@
 {
     "c_comments":{
         "title": "c_comments", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81pv7fqNKc5Wu-dFvHRwgiElhO1ncXua34znPhKRmjsVKJPyxVc81zxdWPjqxRILGuDu7u_aSTV1-kYcpSE-z7ZBnMxE1Q=w1920-h990", 
         "explanation": "Comments can be used to explain code, and to make it more readable. It can also be used to \nprevent execution when testing alternative code.Comments can be singled-lined or multi-lined.Single-line comments start with two forward slashes (//).",
         "syntax": "\n  // This is a commentprintf(\"Hello World!\");\n  printf(\"Hello World!\"); // This is a comment\n  /* The code below will print the words Hello World!to the screen, and it is \n  amazing */printf(\"Hello World!\");", 
         "next": "/c_variables"
@@ -15,14 +15,14 @@
     }, 
     "c_data_types":{
         "title": "c_data_types",
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81p9AucXP4YCDV7mL8x3e-Kp4fvUkyInWMvPGJWMAcfPifZSvvX7ZlJurKnWhzJ0kxotESVSdPy96FnPmo40Wtw0wTui6A=w1002-h993", 
         "explanation": "As explained in the Variables chapter, a variable in C must be a specified \ndata type, \nand you must use a format specifier inside the printf() function to display it:The data type specifies the size and type of information the variable will store.In this tutorial, we will focus on the most basic ones:", 
         "syntax": "\n  // Create variablesint myNum = 5;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // Integer (whole number)float \n  myFloatNum = 5.99;\u00a0\u00a0 // Floating point numberchar myLetter = 'D';\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);\n  float myFloatNum = 3.5;double myDoubleNum = 19.99;\n  printf(\"%f\\n\", myFloatNum); \n  // Outputs 3.500000printf(\"%lf\", myDoubleNum); // Outputs \n  19.990000\n  float myFloatNum = 3.5;printf(\"%f\\n\", myFloatNum); \n  // Default will show 6 digits after the decimal pointprintf(\"%.1f\\n\", \n  myFloatNum); // Only show 1 digitprintf(\"%.2f\\n\", myFloatNum); // Only \n  show 2 digitsprintf(\"%.4f\", myFloatNum);\u00a0\u00a0 // Only show 4 digits", 
         "next": "/c_variables"
     },
     "c_type_conversion":{
         "title": "c_type_conversion", 
-        "image": "https://drive.google.com/file/d/13RBK4UG5z29W2bl8pv3mJwtU_CkOJfv7/view?usp=drive_link", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qP576G58a_DiAhDDcFP_57gUFEZdVrdPZoyNiv8jfYU1aPYKDlwcS8osdsnebhWsPmnD2vBWj2f4TGWXqnyp6kf7FIPA=w1920-h990", 
         "explanation": "Sometimes, you have to convert the value of one data type to another \ntype. This is known as type conversion.For example, if you try to divide two integers, 5 by 2, you \nwould \nexpect the result to be 2.5. But since we are \nworking with integers (and not floating-point values), the following example will just output 2:To get the right result, you need to know how type conversion \nworks.", 
         "syntax": "\n    int x = 5;int y = 2;int sum = 5 / 2;printf(\"%d\", \n    sum);\u00a0// Outputs 2\n    // Automatic conversion: int to floatfloat myFloat = 9;printf(\"%f\", \n  myFloat);\u00a0// 9.000000\n  // Automatic conversion: float to intint myInt = 9.99;printf(\"%d\", \n  myInt); // 9", 
         "next": "/c_operators"
@@ -36,7 +36,7 @@
     }, 
     "c_booleans":{
         "title": "c_booleans",
-        "image": " ",
+        "image": "https://lh3.googleusercontent.com/fife/APg5EOYUlhuyio-GFB8fG4rSaJ0pjegFznPF-Oi6WROnqp9jekB1h7EQwVnSYK4FwoybH0znq7VAp_NqQYzbf6pGQ0mnnYCagGMuXVlqWEc1SFWs-Cg9Qmu3JUrPUGUSh5pwZ83Q7B3uAKTmkBfZm7lnoDufm4BaYNm3bLA2IhR3Bacnpj7hbo8QywCaWnybnT289ajVqsebx3GOk44sE_3I11IfE_aiFASjeVwX5Sm4VEccuIQ9zvUpOv67_c2k3__Xx8l0ePcOh9jd--xqJcNbIoJC6olG0RgTTZMJGV7G5WyddLMUYnzsNQY517okociPVQc9yU7gilkGXJm8N_5KwLYrig-ZXSjqvy_Nb_s54vEm9-4nKvzyhya6voSfqKW_DDXe9hjQBDP4bDQLpFqg3TKLXbniCUGddq4_4eA0HqVji95XR3i3y1yPPlVGZWCRLpKOVgN7ppcihW0jeAM5gdtwinLdVe3reu4EM5Xl4qBZvEro1MH0WC7mn1ljeTy_Tk0mARM9LUlZpc_qzFP35M95-VcLWrCtzfRaglpJq8ooEKd7pNNml-MELrmrviA_-7Q9ex_-LTHO-amZCwmY0xnBDqxhmjxGHRPl3BetdAZcOKCzI_pxEXsUV4mDuL-rCp3nTg4VMzjwPJ_z_qxGkKxdocZyNQMno1mXnp0Zr9O1hoQgePiWSFHwFC96M-hpXCGBU8EWacSFsW8sOjllEfxlk2R5NsyPKvwsDjcMAnu0MUtwx9i5Y4hO3_OHSSplVUL98CBmvm6f-7vKIrbsf30JscSp0UKCJv2HJPG72QvPFC6xub49X0mJ-hT-tmYdceyQBUlMs-FyRPrvR-tGXFy4wnlD6Y6qbIcJasSMRBP7yYdyGYcf1Q1nlCu6UFEZchcrTzTfzlFuiZSW1JlaTafpoPOa_5ik8GHY6qnwvrj7KUUa7LmXqtRfAUhbYogd0TeMAn5EXv6BvFu-NNT-_h6jkRPtey0gduxj5BqQ6JnQHtkeTqjYNhkcbg23dGIYocLJp3Rkb-yFyCxIRqQDIwRVXuLRYRU5fga5qY6DVE-71dcXFA--LOPIONNpo9ucaio2r1ptFxVg3Kq0u-Q-w5PCWywUy2jQeYvWq-U5kHAsSK3Sx47Z__L-i8SpiRBIVKqv18dhRrXbLz6O3grWjznzW0Hu5NvGnxoA08xTrP2zAlKcq6Vf2WKFUEALpMqZxUBkrI8Ph6yW-BeD-Io3ugeLq437JP3JyeKmL0rapF-1zhH-ai9NUgWV0VFed0tYHrkBUhVvUyGKUdGhCLygaeARob8saVbyquxGAonosdQmU7lVXi-vf-7qSZjN0MRJ0bH4Z80um-HyAbvUCudq7CSZhayoPDNvUNVNUqWOW-I27dnnc4koLrs3jaKj4KYZ5PjdjUAbRhnmPLImbqAfcygVd_bkm5ci6eQ8hhght154xC2z6vhgScRI2mWSNz5lWvNwUnagX5s2UMBSEDvdCRoxwU4uvNdsZc4qgQa46RUZx_T0hSFcyV2prmaiJMD7C_4=s320-w320-h200-p-k",
         "explanation": "Very often, in programming, you will need a data type that can only have one of two values, like:For this, C has a bool data type, which is \nknown as booleans.Booleans represent values that are either true or false.", 
         "syntax": "\n  #include <stdbool.h>\n  bool isProgrammingFun = true;bool isFishTasty = false;\n  // Create boolean variablesbool isProgrammingFun = true;bool isFishTasty = false;// \n  Return boolean valuesprintf(\"%d\", \n  isProgrammingFun);\u00a0\u00a0\u00a0// Returns 1 (true)printf(\"%d\", isFishTasty);\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n  // Returns 0 (false)",
         "next": "/c_part2"
@@ -50,35 +50,35 @@
     }, 
     "c_conditions_short_hand":{
         "title": "c_conditions_short_hand", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qcmoM59YcSt83Le1NBlgG9ByLaid2sxoNQYDtgnx9jsw54UkOPHiPwl8tDX8yH_a8EHbEvZj_dzTNKURiFxggYa4bCPg=w1920-h990", 
         "explanation": "There is also a short-hand if else, which is known as the ternary operator \nbecause it consists of three operands. It can be used to replace multiple lines \nof code with a single line. It is often used to replace simple if else \nstatements:Instead of writing:You can simply write:", 
         "syntax": "\nvariable = (condition) ? expressionTrue : \n  expressionFalse;\n\n  int time = 20;if (time < 18) {\u00a0 printf(\"Good day.\");} else {\u00a0 \n  printf(\"Good evening.\");}\n  int time = 20;(time < 18) ? printf(\"Good day.\") : printf(\"Good evening.\");", 
         "next": " "
     }, 
     "c_switch":{
         "title": "c_switch", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81oh8HhUskA3A_9rjahJQu8R67wEa4f5Q5kplw288kh77KKOLc9ZwcrxAJioTt-C_Ccyhojf4hQpVYDgM4w5AMZLOBRBNA=w1920-h990", 
         "explanation": "Instead of writing many if..else statements, you can use the switch statement.The switch statement selects one of many code blocks to be executed:This is how it works:", 
         "syntax": "\n\n  switch(expression) {\u00a0 case x:\u00a0\u00a0\u00a0 // code \n  block\u00a0\u00a0\u00a0 break;\u00a0 case y:\u00a0\u00a0\u00a0\n  // code block\u00a0\u00a0\u00a0 break;\u00a0 default:\u00a0\u00a0\u00a0\n  // code block\n  }\n \n    int day = 4;switch (day) {\u00a0 case 1:\u00a0\u00a0\u00a0 \n    printf(\"Monday\");\u00a0\u00a0\u00a0 break;\u00a0 case 2:\u00a0\u00a0\u00a0 \n    printf(\"Tuesday\");\u00a0\u00a0\u00a0 break;\u00a0 case 3:\u00a0\u00a0\u00a0 \n    printf(\"Wednesday\");\u00a0\u00a0\u00a0 break;\u00a0 case 4:\u00a0\u00a0\u00a0 \n    printf(\"Thursday\");\u00a0\u00a0\u00a0 break;\u00a0 case 5:\u00a0\u00a0\u00a0 \n    printf(\"Friday\");\u00a0\u00a0\u00a0 break;\u00a0 case 6:\u00a0\u00a0\u00a0 \n    printf(\"Saturday\");\u00a0\u00a0\u00a0 break;\u00a0 case 7:\u00a0\u00a0\u00a0 \n    printf(\"Sunday\");\u00a0\u00a0\u00a0 break;}// Outputs \"Thursday\" (day 4)\n  int day = 4;switch (day) {\u00a0 case 6:\u00a0\u00a0\u00a0 printf(\"Today is \n  Saturday\");\u00a0\u00a0\u00a0 \n  break;\u00a0 case 7:\u00a0\u00a0\u00a0 printf(\"Today is Sunday\");\u00a0\u00a0\u00a0 \n  break;\u00a0 default:\u00a0\u00a0\u00a0 printf(\"Looking forward to the Weekend\");\n  }// Outputs \"Looking forward to the Weekend\"", 
         "next": " "
     }, 
     "c_while_loop":{
         "title": "c_while_loop", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81o8PtO-gsWQs2I6TM9rFYs8SYdO2MSA3tnllfArG8Xr1aGsO1JwoLTWix4un3Wa-QWd5XNZls8Q2oVx1S5Dy7suPnHfxQ=w1920-h990", 
         "explanation": "Loops can execute a block of code as long as a specified condition is reached.Loops are handy because they save time, reduce errors, and they make code more readable.The while loop loops through a block of code as long as a specified condition is true:", 
         "syntax": "\n  while (condition) {\n\u00a0 // code block to be executed\n }\n\n  int i = 0;while (i < 5) {\n  \u00a0 printf(\"%d\\n\", i);\n\u00a0\u00a0i++;}\n\n  do {\n\u00a0 // code block to be executed\n}\nwhile (condition);\n", 
         "next": " "
     }, 
     "c_for_loop":{
         "title": "c_for_loop", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rOPw2g-aGEfTaRogV1rcvzb5aBSei3Ran0iFLDXbCsYuTpX38wv9Q1GOJa1lIEpcHlltd3nBW56-xFdbb54WHuuU3fmw=w1920-h990", 
         "explanation": "When you know exactly how many times you want to loop through a block of \ncode, use the for loop instead of a while loop:Statement 1 is executed (one time) before the execution of the code block.Statement 2 defines the condition for executing the code block.", 
         "syntax": "\n\nfor (statement 1; statement 2; statement 3) {\n    \u00a0 // code block to be executed\n }\n\n  int i;for (i = 0; i < 5; i++) {\u00a0 printf(\"%d\\n\", \n  i);}\n\n  for (i = 0; i <= 10; i = i + 2) {\u00a0 printf(\"%d\\n\", i);}\n", 
         "next": " "
     }, 
     "c_break_continue":{
         "title": "c_break_continue", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81ozJn6Kgr6178c138hwotjd45p3aOdm3M9so-VX3YDZN4voWXIxuN3SQXNiCNgdPhRnMsAsaSTJjsxqMjP32JZPtQpDkg=w1920-h990", 
         "explanation": "You have already seen the break statement used in an earlier chapter of this tutorial. It was used to \"jump out\" of a switch statement.The break statement can also be used to jump out of a \nloop.This example jumps out of the for loop when i is equal to 4:", 
         "syntax": "\n  int i;for (i = 0; i < 10; i++) {\u00a0 if (i == 4) {\u00a0\u00a0\u00a0 \n  break;\u00a0 }\u00a0 printf(\"%d\\n\", i);}\n\n  int i;for (i = 0; i < 10; i++) {\u00a0 if (i == 4) {\u00a0\u00a0\u00a0 \n  continue;\u00a0 }\u00a0 printf(\"%d\\n\", i);} \n\n  int i = 0;while (i < 10) {\u00a0 if (i == 4) {\u00a0\u00a0\u00a0 \n  break;\u00a0 }\u00a0 printf(\"%d\\n\", i);\u00a0 i++;} \n", 
         "next": " "
@@ -185,7 +185,8 @@
         "image": " ", 
         "explanation": "Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is \nknown as a member of the structure.Unlike an array, a structure can contain many \ndifferent data types (int, float, char, etc.).You can create a structure by using the struct \nkeyword and declare each of its members inside curly braces:", 
         "syntax": "\n  struct MyStructure {\u00a0\u00a0\u00a0// Structure declaration\u00a0 int myNum;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // Member (int \n  variable)\u00a0 char myLetter;\u00a0\u00a0 \u00a0\u00a0\u00a0 // Member (char variable)}; \n  // End the structure with a semicolon\n  struct myStructure {\u00a0 int myNum;\u00a0 char myLetter;};int main() \n  {\u00a0 struct myStructure s1;\u00a0 return 0;}\n    // Create a structure called myStructurestruct myStructure {\u00a0 \n    int myNum;\u00a0 char myLetter;};int main() {\u00a0 // Create a structure variable \n    of myStructure called s1\u00a0 struct myStructure s1;\n\u00a0 // Assign values to members of s1\u00a0 s1.myNum = 13;\u00a0 \n    s1.myLetter = 'B';\u00a0 // Print values\u00a0 printf(\"My \n    number: %d\\n\", s1.myNum);\u00a0 printf(\"My letter: %c\\n\", s1.myLetter);\n\u00a0 return 0;}", 
-        "next": " "},
+        "next": " "
+    },
     "c_files":{
         "title": "c_files", 
         "image": " ", 
