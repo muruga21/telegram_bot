@@ -106,7 +106,7 @@
     },
     "c_strings_esc":{
         "title": "c_strings_esc", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81p3BZrbReJ3J7vYwLVQz_ooAtJSigmHFt_Rnn1N52krLdRwgcX3lTw_2HDHL_TUKoT57d5WqWH6shLuBx0sjZDg2u_Lww=w1007-h993", 
         "explanation": "Because strings must be written within quotes, C will misunderstand this string, \nand generate an error:The solution to avoid this problem, is to use the backslash escape character.The backslash (\\) escape character turns special characters into string characters:", 
         "syntax": "\n  char txt[] = \"We are the so-called \\\"Vikings\\\" from the north.\";\n\n  char txt[] = \"It\\'s alright.\";\n\n  char txt[] = \"The character \\\\ is called backslash.\";\n", 
         "next": " "
@@ -120,7 +120,7 @@
     }, 
     "c_user_input":{
         "title": "c_user_input", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qJdUf06y9VoAzg_K_9rXquUUAPigHaomuJAAkE0E0lzXNOxHY_G2o4rdh8jVF03r3vV433jRexxOcAz-e5Dvu3gsbajw=w1007-h993", 
         "explanation": "You have already learned that printf() is used to output values in C.To get user input, you can use the scanf() function:Output a number entered by the user:", 
         "syntax": "\n  // Create an integer variable that will store the number we get from the userint myNum;// Ask the user to type a numberprintf(\"Type a number: \n  \\n\");// Get and save the number the user typesscanf(\"%d\", &myNum);\n// Output the number the user typedprintf(\"Your number is: %d\", myNum);\n\n  // Create an int and a char variableint myNum;char myChar;\n  // Ask the user to type a number AND a characterprintf(\"Type a number AND \n  a character and press enter: \\n\"); // Get and save the number AND \n  character the user typesscanf(\"%d %c\", &myNum, &myChar);// Print \n  the numberprintf(\"Your number is: %d\\n\", myNum);// Print the \n  characterprintf(\"Your character is: %c\\n\", myChar);\n\n  // Create a stringchar firstName[30];// Ask the user to input some \n  textprintf(\"Enter your first name: \\n\");// Get and save the text\n  scanf(\"%s\", firstName);// Output the textprintf(\"Hello %s\", \n  firstName);\n", 
         "next": " "
@@ -162,27 +162,28 @@
     },
     "c_functions_decl":{
         "title": "c_functions_decl", 
-        "image": " ", "explanation": "You just learned from the previous chapters that you can create and call a function in the following way:A function consist of two parts:For code optimization, it is recommended to separate the declaration and the definition of the function.", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81oc-m8YdxkB8VCMPxHdhIIm6LY3wj-iZeqxyAGKLtBXCwaa5l4xw_ltDudpSXxtNFhfPGPa4SaFAHfRG2RAa3SyJy_kAQ=w1007-h993", 
+        "explanation": "You just learned from the previous chapters that you can create and call a function in the following way:A function consist of two parts:For code optimization, it is recommended to separate the declaration and the definition of the function.", 
         "syntax": "\n  // Create a functionvoid myFunction() {\u00a0 printf(\"I just got \n  executed!\");}int main() {\u00a0 \n  myFunction(); // call the function\u00a0 return 0;}\n    void myFunction() { // declaration\u00a0 // \n    the body of the function (definition)}\n\n  // Function declarationvoid myFunction();// The main methodint main() {\u00a0 \n  myFunction();\u00a0 // call the function\u00a0 return 0;}// Function definitionvoid myFunction() {\u00a0 \n  printf(\"I just got executed!\");}\n", 
         "next": " "
     },
     "c_functions_recursion":{
         "title": "c_functions_recursion", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81oH_QDSXMKRDulUjrDfKlxnQKqfmyTdCEYvDzArGJTV5Ci-HboXmDtRGRK-bO20Q_KvE34v-yKngQ_Bg8SEFRey9P3U=w1007-h993", 
         "explanation": "Recursion is the technique of making a function call itself. This technique provides a way\nto break complicated problems down into simple problems which are easier to solve.Recursion may be a bit difficult to understand. The\nbest way to figure out how it works is to experiment with it.Adding two numbers together is easy to do, but adding a range of numbers is more\ncomplicated. In the following example, recursion is used to add a range of numbers\ntogether by breaking it down into the simple task of adding two numbers:", 
         "syntax": "\n  int sum(int k);int main() {\u00a0 int result = sum(10);\u00a0 \n  printf(\"%d\", result);\u00a0 return 0;}int sum(int k) {\u00a0 \n  if (k > 0) {\u00a0\u00a0\u00a0 return k + sum(k - 1);\u00a0 } else {\u00a0\u00a0\u00a0 \n  return 0;\u00a0 }}", 
         "next": " "
     },
     "c_math":{
         "title": "c_math", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rTIoS-to-SCxC6eGOe1iL4W-e247TdTmADGPOPQZ6rhFvtAtZgUnq06W3_XT-ANy3W4Tt6B8bgJSbYBgwuF-UI2lBCcw=w1007-h993", 
         "explanation": "There is also a list of math functions available, that allows you to perform mathematical tasks on numbers.To use them, you must include the math.h\nheader file in your program:To find the square root of a number, use the sqrt() \nfunction:", 
         "syntax": "\n  #include <math.h>\n\n  printf(\"%f\", sqrt(16));\n\n  printf(\"%f\", ceil(1.4));printf(\"%f\", \n  floor(1.4));\n", 
         "next": " "
     },
     "c_structs":{
         "title": "c_structs", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81r-ggsfcVBwIbFPjL_lDw3ssxP38qI-SZAbpctddUtgD0bZHlsTNVCNrGotH_HfuV1MYEprgO0qoUI99BqyXad0Ri2jCw=w1007-h993", 
         "explanation": "Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is \nknown as a member of the structure.Unlike an array, a structure can contain many \ndifferent data types (int, float, char, etc.).You can create a structure by using the struct \nkeyword and declare each of its members inside curly braces:", 
         "syntax": "\n  struct MyStructure {\u00a0\u00a0\u00a0// Structure declaration\u00a0 int myNum;\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 // Member (int \n  variable)\u00a0 char myLetter;\u00a0\u00a0 \u00a0\u00a0\u00a0 // Member (char variable)}; \n  // End the structure with a semicolon\n  struct myStructure {\u00a0 int myNum;\u00a0 char myLetter;};int main() \n  {\u00a0 struct myStructure s1;\u00a0 return 0;}\n    // Create a structure called myStructurestruct myStructure {\u00a0 \n    int myNum;\u00a0 char myLetter;};int main() {\u00a0 // Create a structure variable \n    of myStructure called s1\u00a0 struct myStructure s1;\n\u00a0 // Assign values to members of s1\u00a0 s1.myNum = 13;\u00a0 \n    s1.myLetter = 'B';\u00a0 // Print values\u00a0 printf(\"My \n    number: %d\\n\", s1.myNum);\u00a0 printf(\"My letter: %c\\n\", s1.myLetter);\n\u00a0 return 0;}", 
         "next": " "
@@ -196,13 +197,13 @@
     },
     "c_files_write":{
         "title": "c_files_write", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81of0y1O2Sh4TFec_N_KVc1_ScgXlHL9a1vQgb3uHjTJt3Z1X1sqrqLA67j4rn7kV25DGKZ8lY0lvANwvjUtlP94tDCbmQ=w1007-h993", 
         "explanation": "Let's use the w mode from the previous \nchapter again, and write something to the file we just created.The w mode means that the file is opened for\nwriting. To insert content to it, you can use the fprint() \nfunction and add the pointer variable (fptr in our example) and some text:As a result, when we open the file on our computer, it looks like this:", "syntax": "\n    FILE *fptr;// Open a file in writing modefptr = fopen(\"filename.txt\", \"w\");\n// Write some text to the filefprintf(fptr, \"Some text\");\n// Close the filefclose(fptr);\n    fprintf(fptr, \"Hello \n    World!\");\n    FILE *fptr;// Open a file in append modefptr = fopen(\"filename.txt\", \"a\");\n// Append some text to the filefprintf(fptr, \"\\nHi everybody!\");\n// Close the filefclose(fptr);", 
         "next": " "
     },
     "c_files_read":{
         "title": "c_files_read", 
-        "image": " ", 
+        "image": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81p3B7GQgaQ3CXq5IYd5gJkylSu-0Zdw_cX5CnZU3j7-PdTZaACXqI7195-kAJ8gh6-FOOvxl444qOBAC2QVk9GVwlUDcg=w1007-h993", 
         "explanation": "In the previous chapter, we wrote to a file using w \nand a modes inside the fopen() function.To read from a file, you can use the\nr mode:This will make the filename.txt opened for reading.", 
         "syntax": "\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n// Store the content of the filechar myString[100];\n    fgets(myString, 100, \n    fptr);", 
         "next": " "
