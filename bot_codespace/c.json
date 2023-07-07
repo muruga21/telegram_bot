@@ -1,3 +1,4 @@
+[
 
 {
     "title": "c_comments", 
@@ -5,7 +6,7 @@
     "explanation": "Comments can be used to explain code, and to make it more readable. It can also be used to \nprevent execution when testing alternative code.Comments can be singled-lined or multi-lined.Single-line comments start with two forward slashes (//).",
     "syntax": "\n  // This is a commentprintf(\"Hello World!\");\n  printf(\"Hello World!\"); // This is a comment\n  /* The code below will print the words Hello World!to the screen, and it is \n  amazing */printf(\"Hello World!\");", 
     "next": "/c_variables"
-}, 
+},
 {
     "title": "c_variables", 
     "image": "https://lh3.googleusercontent.com/fife/APg5EOb9j8n9LXZNvMyCtaP6waPILmghmqOCwYRFtxSGvzqRgx-TRqQtbtsrHNdCbZIpibT5RTg2rpP7HE-5KBblyES5iq2TFfXfLSxyUndgmG_-bpUIGsZgxVqPvwoEre2RVTiLOttFYFArBB8J0RwHtR0GMGZtrqNxltHLUWcoy1cWM6uAumkQXjhhe1e4dvBnYBss5TG-C3lbWh_WvKeGvLfF_2ONpFVjaCiluYEZnupYy7XSLDsXJZVah23IhaIeGImXgi9PJTzEUYVBU1hZqocXbJpQMEiqP3vKfHXQHSipFa97Ib9rI-0BrHkAMB60ejBIec0zDSF5NbJ5xw1weQu4-DDsVHwwNiV2huKuX6FFclg0lWqgr2rJhJx4i7pG6rNo0OdMicfJqvG4OJldHO8ECsvQBZiWAQZdf5ADFKAasv3lzQ-neq7bIHeZJe07R8BVBhcHYAdxYoKzvtT8xWiaQJB8V0dkB3mdWZQejf1dy_XhurArycWT2HmCJW5m2msSnL02Cf8nQfjiKopxR4A6FienjnmOe2qISoAYHR395XpCKQRWzXFu18r_3cm8aO17yY2wiRH3Kes8bKsRcL10_iHuboIkmH2lWSrjk0CzFI3mY4NOBf-U0wISE6NKWuAX9fRpJqVYHf_wWN24OhGXn11SldPjnLM4T0ZE1RlwaajXMdcDqW_n61yN2gAkADxwB04FN7tq78XnXT0AV706L1FMqz9C37W91nJNC4NGhzH73Mj1Xte0LZyj3FSbu8p-MLjn9ll6QKio1XiU7GkJ1UGvLQuzItEj_Zb4nIgRLv9yM_h7XkdsezjuU1cAsS29zK8ORljsFTI-l9fMxBt5ycP0nBT-KBAXGbH1PP_U9jLU2NkoQPpu5_gSdEwkavOCISR95ofdNNAsPz71kbQLYv5itDaVMLH3TVUJPlYbzfTkkXd_Pbd5l4qtA84aYkwFp_-ZRQ=w1920-h990", 
@@ -257,3 +258,4 @@
     "syntax": "\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n// Store the content of the filechar myString[100];\n    fgets(myString, 100, \n    fptr);", 
     "next": " "
 }
+]

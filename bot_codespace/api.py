@@ -14,7 +14,7 @@ def main():
 def fetch(db = main()):
     collection = db['c_datas']
 
-    query = {"title": "muruga"}
+    query = {"title": "c_comments"}
 
     documents = collection.find(query)
 
@@ -22,3 +22,6 @@ def fetch(db = main()):
         print(doc)
 
     client.close()
+    
+    
+fetch()
