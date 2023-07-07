@@ -1,21 +1,24 @@
 from pymongo import MongoClient
 
-# Establish a connection to MongoDB
 client = MongoClient('mongodb://localhost:27017')
 
-# Access the database and collection
 db = client['telegrambot']
-collection = db['c_datas']
 
-# Define the query filter
-query = {"title": "muruga"}
 
-# Retrieve documents that match the query filter
-documents = collection.find(query)
 
-# Process the retrieved documents
-for doc in documents:
-    print(doc)
+def main():
+    client = MongoClient('mongodb://localhost:27017')
+    db = client['telegrambot']
+    return db
 
-# Close the connection
-client.close()
+def fetch(db = main()):
+    collection = db['c_datas']
+
+    query = {"title": "muruga"}
+
+    documents = collection.find(query)
+
+    for doc in documents:
+        print(doc)
+
+    client.close()
